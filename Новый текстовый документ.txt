@@ -1,0 +1,80 @@
+1)Числа вводятся в одну строку
+
+a, b, c = map(int, input().split())
+
+print(a+b+c)
+
+print(a*b*c)
+
+print((a+b+c)/3)
+
+2)
+
+import math
+
+x1, y1 = map(float, input('Введите координаты точки A: ').split())
+
+x2, y2 = map(float, input('Введите координаты точки B: ').split())
+
+print('Длина отрезка AB =', math.sqrt((abs(x1-x2))**2+(abs(y1-y2))**2))
+
+3)
+
+from random import randint
+
+a = randint(100, 999)
+
+print('Получено число', str(a) + '.')
+
+print('Его цифры', str(a)[0] + ', ' + str(a)[1] + ', ' + str(a)[2] + '.')
+
+
+
+4)a=int(input ("Введите 1е : "))
+b=int(input ("Введите 2е : "))
+c=a
+a=b
+b=c
+print(a,b)
+
+
+5)a=int(input ())
+b=int(input ())
+print (a,b)
+a,b = b,a
+print(a,b)
+
+
+6)import random
+
+a = random.randint(2, 16)
+o = ''
+while a > 0:
+    o = str(a % 2) + o
+    a = a //2
+print (o)
+
+
+
+7)import random
+a = random.randint(2, 16)
+o =''
+d = 0
+while a > 0:
+    o = str(a % 2) + o 
+    a = a// 2
+    for i in o:
+        d = d * 2 + int(i)
+print (d)
+
+
+
+9)import random
+
+n = int(input())
+if n < 2:
+    print("не хватает дежурных")
+else:
+        chel = list(range(1, n + 1))
+        random.shuffle(chel)
+        print(str(chel[0]))
